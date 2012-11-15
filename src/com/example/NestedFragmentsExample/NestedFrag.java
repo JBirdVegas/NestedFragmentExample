@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 public class NestedFrag extends Fragment {
-    NestedFrag thisFrag = this;
     public NestedFrag() {
 
     }
@@ -38,8 +37,6 @@ public class NestedFrag extends Fragment {
     }
 
     private void destroyFragment() {
-        //Fragment fragment = getFragmentManager().findFragmentByTag(getTag());
-        //getChildFragmentManager().beginTransaction().remove(this).commit();
         getChildFragmentManager().beginTransaction().hide(this).commit();
     }
 }

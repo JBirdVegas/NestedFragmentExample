@@ -9,19 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * Created with IntelliJ IDEA.
- * User: jbird
- * Date: 11/14/12
- * Time: 5:16 PM
- * To change this template use File | Settings | File Templates.
- */
 public class RightFrag extends Fragment {
     TextView changeableText;
-
-    public RightFrag() {
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

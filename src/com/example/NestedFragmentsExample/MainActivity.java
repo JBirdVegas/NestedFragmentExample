@@ -1,11 +1,9 @@
 package com.example.NestedFragmentsExample;
 
 import android.app.Activity;
-import android.app.FragmentManager;
 import android.os.Bundle;
 
 public class MainActivity extends Activity {
-    FragmentManager mChildFragmentManager;
     /**
      * Called when the activity is first created.
      */
