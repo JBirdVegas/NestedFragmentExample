@@ -34,7 +34,7 @@ public class RightFrag extends Fragment {
             public void onClick(View v) {
                 Fragment videoFragment = new NestedFrag();
                 FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                transaction.add(getId(), videoFragment).commit();
+                transaction.add(getId(), videoFragment, "right").commit();
             }
         });
         return root;

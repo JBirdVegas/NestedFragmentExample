@@ -12,6 +12,7 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // just load the fragments from xml
         setContentView(R.layout.main);
     }
 }

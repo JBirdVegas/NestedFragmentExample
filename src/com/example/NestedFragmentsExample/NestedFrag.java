@@ -7,13 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-/**
- * Created with IntelliJ IDEA.
- * User: jbird
- * Date: 11/14/12
- * Time: 5:15 PM
- * To change this template use File | Settings | File Templates.
- */
 public class NestedFrag extends Fragment {
     NestedFrag thisFrag = this;
     public NestedFrag() {
@@ -45,6 +38,8 @@ public class NestedFrag extends Fragment {
     }
 
     private void destroyFragment() {
-        getChildFragmentManager().beginTransaction().remove(this);
+        //Fragment fragment = getFragmentManager().findFragmentByTag(getTag());
+        //getChildFragmentManager().beginTransaction().remove(this).commit();
+        getChildFragmentManager().beginTransaction().hide(this).commit();
     }
 }

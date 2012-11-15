@@ -2,7 +2,9 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:gravity="center">
+
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/left_frag_text"
               android:text="Left Fragment { Hello World }"
@@ -15,9 +17,10 @@
     <Button
             android:id="@+id/left_frag_button"
             android:text="Launch Nested Fragment"
-            android:layout_below="@+id/left_frag_text"
             android:gravity="center"
+            android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_width="wrap_content"
+            android:paddingBottom="10dp"/>
 
 </RelativeLayout>
